@@ -1,0 +1,232 @@
+// ====================================================================================
+//    ЧЮДО ФУНКЦИИ СЦСС ДЛЯ ПЕРЕВОДА ИЗ ПИКСЕЛЕЙ
+@use "sass:math";
+
+//ТО %   (снипед p=     percentage($number: $1 / $2) )
+
+//REM   (снипед r= )
+@function rem($px) {
+	$result: math.div($px, 16) + rem;
+	@return $result;
+}
+
+//EM   (снипед e= )
+@function em($px_po-maketu, $px_tekushiy-shrift) {
+	$result: math.div($px_po-maketu, $px_tekushiy-shrift) + em;
+	@return $result;
+}
+
+// ====================================================================================
+// 								CLAMP
+//   	(снипед cp )
+@function clamp_F-px_vw(
+	$px_min-f,
+	$px_max-f,
+	$px_min-w: 320,
+	$px_max-w: $contWidth
+) {
+	/* если первым аргументом передано тип строка то мин.шрифт пощитается автомат. */
+	@if (type-of($value: $px_min-f) == string) {
+		@if ($px_min-f == "auto") {
+			$px_min-f: $px_max-f / ($px_max-w / $px_min-w);
+		} @else {
+			// любая другая строка
+			$px_min-f: $px_max-f / 3.5;
+		}
+	}
+
+	/* нулевой шрифт (в пикселях) */
+	$px_f_0w: $px_min-f -
+		((($px_max-f - $px_min-f) / ($px_max-w - $px_min-w)) * $px_min-w);
+
+	/* размер шрифта в диапазоне, с учетом нулевого */
+	$vw_f-max-w: ((($px_max-f - $px_f_0w) / $px_max-w) * 100) + vw;
+
+	$px-res_f_0w: ($px_f_0w) + px; /* нулевой шрифт */
+	$px-res_min-f: ($px_min-f) + px; /* минимальный шрифт */
+	$px-res_max-f: ($px_max-f) + px; /* максимальный шрифт */
+
+	@return clamp($px-res_min-f, $px-res_f_0w + $vw_f-max-w, $px-res_max-f);
+}
+//   	(снипед cr )
+@function clamp_F-rem_vw(
+	$px_min-f,
+	$px_max-f,
+	$px_min-w: 320,
+	$px_max-w: $contWidth
+) {
+	/* если первым аргументом передано тип строка то мин.шрифт пощитается автомат. */
+	@if (type-of($value: $px_min-f) == string) {
+		@if ($px_min-f == "auto") {
+			$px_min-f: $px_max-f / ($px_max-w / $px_min-w);
+		} @else {
+			// любая другая строка
+			$px_min-f: $px_max-f / 3.5;
+		}
+	}
+
+	/* нулевой шрифт (в пикселях) */
+	$px_f_0w: $px_min-f -
+		((($px_max-f - $px_min-f) / ($px_max-w - $px_min-w)) * $px_min-w);
+
+	/* размер шрифта в диапазоне, с учетом нулевого */
+	$vw_f-max-w: ((($px_max-f - $px_f_0w) / $px_max-w) * 100) + vw;
+
+	$rem_f_0w: ($px_f_0w / 16) + rem; /* нулевой шрифт */
+	$rem_min-f: ($px_min-f / 16) + rem; /* минимальный шрифт */
+	$rem_max-f: ($px_max-f / 16) + rem; /* максимальный шрифт */
+
+	@return clamp($rem_min-f, $rem_f_0w + $vw_f-max-w, $rem_max-f);
+}
+//   	(снипед ce )
+@function clamp_F-em_vw(
+	$px_min-f,
+	$px_max-f,
+	$px_tekushiy-shrift: 16,
+	$px_min-w: 320,
+	$px_max-w: $contWidth
+) {
+	/* если первым аргументом передано тип строка то мин.шрифт пощитается автомат. */
+	@if (type-of($value: $px_min-f) == string) {
+		@if ($px_min-f == "auto") {
+			$px_min-f: $px_max-f / ($px_max-w / $px_min-w);
+		} @else {
+			// любая другая строка
+			$px_min-f: $px_max-f / 3.5;
+		}
+	}
+
+	/* нулевой шрифт (в пикселях) */
+	$px_f_0w: $px_min-f -
+		((($px_max-f - $px_min-f) / ($px_max-w - $px_min-w)) * $px_min-w);
+
+	/* размер шрифта в диапазоне, с учетом нулевого */
+	$vw_f-max-w: ((($px_max-f - $px_f_0w) / $px_max-w) * 100) + vw;
+
+	$em_f_0w: ($px_f_0w / $px_tekushiy-shrift) + em; /* нулевой шрифт */
+	$em_min-f: ($px_min-f / $px_tekushiy-shrift) + em; /* минимальный шрифт */
+	$em_max-f: ($px_max-f / $px_tekushiy-shrift) + em; /* максимальный шрифт */
+
+	@return clamp($em_min-f, $em_f_0w + $vw_f-max-w, $em_max-f);
+}
+// -------------------
+//   	(снипед cm )
+// Для горизонтальных отступов. Результат  clamp(px, px + vw, rem)
+@function clamp_F-mixPVwR(
+	$px_min-f,
+	$px_max-f,
+	$px_min-w: 320,
+	$px_max-w: $contWidth
+) {
+	/* если первым аргументом передано тип строка то мин.шрифт пощитается автомат. */
+	@if (type-of($value: $px_min-f) == string) {
+		@if ($px_min-f == "auto") {
+			$px_min-f: $px_max-f / ($px_max-w / $px_min-w);
+		} @else {
+			// любая другая строка
+			$px_min-f: $px_max-f / 3.5;
+		}
+	}
+
+	/* нулевой шрифт (в пикселях) */
+	$px_f_0w: $px_min-f -
+		((($px_max-f - $px_min-f) / ($px_max-w - $px_min-w)) * $px_min-w);
+
+	/* размер шрифта в диапазоне, с учетом нулевого */
+	$VW_f-max-w: ((($px_max-f - $px_f_0w) / $px_max-w) * 100) + vw;
+
+	$PX_f_0w: ($px_f_0w) + px; /* нулевой шрифт */
+	$PX_min-f: ($px_min-f) + px; /* минимальный шрифт */
+	$REM_max-f: ($px_max-f / 16) + rem; /* максимальный шрифт */
+
+	@return clamp($PX_min-f, $PX_f_0w + $VW_f-max-w, $REM_max-f);
+}
+
+// ====================================================================================
+// 			#Адаптивный шрифт без учета пропорций экрана.
+// --------------------------------------------------------------
+// ШПАРГАЛКА "адаптивный шрифт ФЖ":
+// font-size: 40px; /* по макету */
+// (желаемый_шрифт + разница_с_макетным * ((100vw - мин_экран)/(ш_макета - мин_экран)))
+// font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+// --------------------------------------------------------------
+
+// 	(снипед x )
+// 	автоматически выщитуется разница
+@function x($px-min_f, $px-max_f) {
+	/* если первым аргументом передано "" то мин.шрифт пощитается автомат. */
+	@if (type-of($value: $px-min_f) == string) {
+		$px-min_f: $px-max_f / 3.5;
+	}
+	$min-f_px: $px-min_f + px;
+	$razn: $px-max_f - $px-min_f;
+	$res: calc($min-f_px + $razn * ((100vw - 320px) / (($contWidth - 320))));
+	@return $res;
+}
+// =============================================================
+// 				Адаптивный шрифт с учетом пропорций экрана
+// 	(снипед xx )
+// 	автоматически выщитуется разница
+@function xx($px-min_f, $px-max_f) {
+	/* если первым аргументом передано "" то мин.шрифт пощитается автомат. */
+	@if (type-of($value: $px-min_f) == string) {
+		$px-min_f: $px-max_f / 3.5;
+	}
+	$razn: $px-max_f - $px-min_f;
+	$min-f_px: $px-min_f + px;
+	$res: calc(
+		$min-f_px + $razn *
+			min(
+				((100vmin - 320px) / ($contWidth * 0.75 - 320)),
+				((100vmax - 320px) / ($contWidth - 320))
+			)
+	);
+	@return $res;
+}
+
+// ====================================================================================
+// ====================================================================================
+
+//
+
+//
+
+//
+
+// ====================================================================================
+// ====================================================================================
+// ====================================================================================
+// ====================================================================================
+// ====================================================================================
+// 				CLAMP - Реализация  с сайта
+// https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+@function clampBuilder(
+	$minFontSizePX,
+	$maxFontSizePX,
+	$minWidthPX,
+	$maxWidthPX
+) {
+	$minFontSize: $minFontSizePX / 16;
+	$maxFontSize: $maxFontSizePX / 16;
+	$minWidth: $minWidthPX / 16;
+	$maxWidth: $maxWidthPX / 16;
+	//
+	$slope: ($maxFontSize - $minFontSize) / ($maxWidth - $minWidth);
+	$yAxisIntersection: -$minWidth * $slope + $minFontSize;
+	//
+	$slopeVW: ($slope * 100) + vw;
+	$yAxisIntersectionREM: $yAxisIntersection + rem;
+	$minFontSizeREM: $minFontSize + rem;
+	$maxFontSizeREM: $maxFontSize + rem;
+	@return clamp(
+		$minFontSizeREM,
+		$yAxisIntersectionREM + $slopeVW,
+		$maxFontSizeREM
+	);
+}
+// ====================================================================================
+// ====================================================================================
+// ====================================================================================
+// ====================================================================================
+// ====================================================================================
+// ====================================================================================
