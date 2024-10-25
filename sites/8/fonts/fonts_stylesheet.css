@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Brandon Text";
+    src: url("BrandonText-Bold.eot");
+    src:
+        url("BrandonText-Bold.eot?#iefix") format("embedded-opentype"),
+        url("BrandonText-Bold.woff2") format("woff2"),
+        url("BrandonText-Bold.woff") format("woff"),
+        url("BrandonText-Bold.ttf") format("truetype"),
+        url("BrandonText-Bold.svg#BrandonText-Bold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "BellamyBold";
+    src: url("BellamyBold.eot");
+    src:
+        url("BellamyBold.eot?#iefix") format("embedded-opentype"),
+        url("BellamyBold.woff2") format("woff2"),
+        url("BellamyBold.woff") format("woff"),
+        url("BellamyBold.ttf") format("truetype"),
+        url("BellamyBold.svg#BellamyBold") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
