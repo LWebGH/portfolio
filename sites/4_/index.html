@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="robots" content="none" />
+		<title>index-Document</title>
+		<link rel="stylesheet" href="./css/index-style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<section class="greeting">
+				<div class="greeting__box">
+					<div class="greeting__header">
+						<nav class="greeting__menu menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a
+										class="menu__link"
+										href="#"
+										data-goto=".greeting"
+										>Home
+									</a>
+								</li>
+								<li class="menu__item">
+									<a
+										class="menu__link"
+										href="#"
+										data-goto=".services"
+										>Services</a
+									>
+								</li>
+								<li class="menu__item">
+									<a
+										class="menu__link"
+										href="#"
+										data-goto=".about"
+										>About Us
+									</a>
+								</li>
+								<li class="menu__item">
+									<a
+										class="menu__link"
+										href="#"
+										data-goto=".clients"
+										>Our Clients
+									</a>
+								</li>
+								<li class="menu__item">
+									<a
+										class="menu__link"
+										href="#"
+										data-goto=".blog"
+										>Blog
+									</a>
+								</li>
+								<li class="menu__item">
+									<a
+										class="menu__link"
+										href="#"
+										data-goto=".contact"
+										>Contact Us</a
+									>
+								</li>
+							</ul>
+						</nav>
+						<div class="greeting__phone _icon-phone">
+							<span>+516 260 0598 </span>
+						</div>
+						<button class="greeting__burger burger">
+							<span></span>
+						</button>
+					</div>
+					<div class="greeting__body">
+						<h1 class="greeting__title">Fusion Travel</h1>
+						<h4 class="greeting__sub-title">
+							Lets Discover The World Together
+						</h4>
+						<a class="greeting__btn button" href="#"
+							>Plan Your Trip</a
+						>
+					</div>
+					<div class="greeting__video-action video-action">
+						<button class="video-action__btn">
+							<svg class="video-action__icon-play icon">
+								<use
+									xlink:href="./img/sprite.svg#Play"
+								></use></svg
+							><svg class="video-action__icon-pause icon">
+								<use xlink:href="./img/sprite.svg#Pause"></use>
+							</svg>
+						</button>
+						<p class="video-action__text" href="#">
+							<span class="video-action__text_small">Watch </span
+							><span class="video-action__text_big"
+								>Intro Video</span
+							>
+						</p>
+					</div>
+				</div>
+				<video class="greeting__video" preload="metadata" muted loop>
+					<source
+						type="video/webm"
+						src="./img/video/banner-Video.webm"
+					/>
+					<source
+						type="video/mp4"
+						src="./img/video/banner-Video.mp4"
+					/>
+				</video>
+				<div class="greeting__overlay"></div>
+			</section>
+			<div class="content">
+				<section class="about">
+					<div class="container">
+						<div class="about__box">
+							<div class="about__top">
+								<h2 class="about__top-title title">
+									Welcome to Fusion
+								</h2>
+								<p class="about__top-text textS">
+									Nam consectetur elementum neque vitae
+									condimentum. Aenean dignissim, turpis et
+									tincidunt finibus, massa purus malesuada
+									metus, a commodo velit magna nec nibh. Donec
+									dictum fringilla tempus. Nunc rhoncus sapien
+									lectus, non fermentum neque euismod quis.
+									Phasellus sagittis tortor in accumsan
+								</p>
+							</div>
+							<div class="about__cards swiper">
+								<ul class="about__cards-list swiper-wrapper">
+									<li
+										class="about__cards-item card swiper-slide"
+									>
+										<div class="card__img">
+											<img src="./img/Icon1.png" alt="" />
+										</div>
+										<h5 class="card__title">
+											Best Price Guarantee
+										</h5>
+										<p class="card__text textS">
+											SpaceTeam bootstrapping user
+											centered design sticky note
+											convergence fund parallax
+										</p>
+									</li>
+									<li
+										class="about__cards-item card swiper-slide"
+									>
+										<div class="card__img">
+											<img src="./img/Icon2.png" alt="" />
+										</div>
+										<h5 class="card__title">
+											Best Travel Agency
+										</h5>
+										<p class="card__text textS">
+											User story Steve Jobs Stev Jobs
+											iterate human-centered design
+											iterate pair progra ming 360
+											campaign.
+										</p>
+									</li>
+									<li
+										class="about__cards-item card swiper-slide"
+									>
+										<div class="card__img">
+											<img src="./img/iconStar.png" alt="" />
+										</div>
+										<h5 class="card__title">
+											Trust & Safety
+										</h5>
+										<p class="card__text textS">
+											Thought leader cortado viral viral
+											earned media long shadow actionable
+											insight waterfall is so 2000
+										</p>
+									</li>
+								</ul>
+								<div
+									class="about__pagination swiper-pagination"
+								></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="spec-line"></div>
+				<section class="services">
+					<div class="container">
+						<div class="services__top top-block">
+							<h2 class="top-block__title title">
+								Find Your Destination
+							</h2>
+							<p class="top-block__text textL">
+								Most Popular Places Are Waiting For You
+							</p>
+						</div>
+						<form class="services__form" action="#">
+							<label
+								class="services__search-icon _icon-glass"
+								for="services-search"
+							>
+							</label
+							><input
+								class="services__search"
+								type="text"
+								id="services-search"
+								placeholder="Search..."
+							/>
+						</form>
+					</div>
+					<div class="services__box">
+						<div class="services__slider swiper">
+							<button
+								class="services__btn arrow-button swiper-button-prev"
+							></button
+							><button
+								class="services__btn arrow-button swiper-button-next"
+							></button>
+							<div class="services__cards swiper-wrapper"></div>
+						</div>
+					</div>
+				</section>
+				<div class="spec-line"></div>
+				<section class="blog">
+					<div class="container">
+						<div class="blog__top top-block">
+							<h2 class="top-block__title title">
+								Latest News From Blog
+							</h2>
+							<p class="top-block__text textL">
+								See Whats People Are Sharing Their Thoughts
+							</p>
+						</div>
+						<div class="blog__articles articles">
+							<div class="articles__big-img articles-img-ibg">
+								big<img
+									src="./img/blog/Istunbul/Istanbul3.jpg"
+									alt="Istanbul"
+								/>
+							</div>
+							<div class="articles__article-1 article-1">
+								<div class="article-1__img articles-img-ibg">
+									<img
+										src="./img/blog/Istunbul/Istanbul1.webp"
+										alt="Istanbul"
+									/>
+								</div>
+								<div class="article-1__body article">
+									<h6 class="article__title">
+										Most Beautiful Place In The World -
+										Istanbul
+									</h6>
+									<p class="article__text">
+										Venture capital food-truck minimum
+										viable product ideate pitch deck
+										experiential cortado affordances
+										parallax
+									</p>
+								</div>
+							</div>
+							<div class="articles__small-img-1 articles-img-ibg">
+								1<img
+									src="./img/blog/Shimla/Shimla4.jpg"
+									alt="Shimla"
+								/>
+							</div>
+							<div class="articles__article-2 article-2">
+								<div class="article-2__body article">
+									<h6 class="article__title">
+										The Statue Of Liberty Travel
+									</h6>
+									<p class="article__text">
+										Qualitative ship it user story grok
+										SpaceTeam waterfall is so 2000 and late
+										quantitative vs.
+									</p>
+								</div>
+								<div class="article-2__img articles-img-ibg">
+									<img
+										src="./img/blog/StatueOfLiberty/TheStatueOfLiberty4.jpg"
+										alt="StatueOfLiberty"
+									/>
+								</div>
+							</div>
+							<div class="articles__small-img-2 articles-img-ibg">
+								2<img
+									src="./img/blog/StatueOfLiberty/TheStatueOfLiberty3.jfif"
+									alt="heStatueOfLiberty"
+								/>
+							</div>
+							<div class="articles__article-3 article-3">
+								<div class="article-3__img articles-img-ibg">
+									<img
+										src="./img/blog/Shimla/Shimla1.jpg"
+										alt="Shimla"
+									/>
+								</div>
+								<div class="article-3__body article">
+									<h6 class="article__title">
+										The Best Natural Paradise - Shimla
+									</h6>
+									<p class="article__text">
+										Ship it integrate prototype fund
+										human-centered design integrate big data
+										convergence.
+									</p>
+								</div>
+							</div>
+						</div>
+						<a class="blog__btn button" href="#">Keep Reading</a>
+					</div>
+				</section>
+				<div class="spec-line"></div>
+				<section class="clients">
+					<div class="container">
+						<div class="clients__top top-block">
+							<h2 class="top-block__title title">
+								What Our Client Says
+							</h2>
+							<p class="top-block__text textL">
+								People’s sharing their thought about our works
+							</p>
+						</div>
+						<div class="clients__slider swiper">
+							<div class="clients__wrap swiper-wrapper">
+								<div class="clients__slide swiper-slide">
+									<div class="clients__info">
+										<div class="clients__img"></div>
+										<div class="clients__text textS">
+											<p class="clients__article">
+												Integrate 360 campaign viral
+												disrupt pair programming latte
+												paradigm hacker 360 campaign
+												cortado bootstrapping.
+												Thinker-maker-doer paradigm
+												affordances viral bootstrapping
+												ship it human-centered design
+												waterfall is so 2000 and late
+												responsive integrate parallax.
+											</p>
+											<p class="clients__name">
+												Dimitri Vegas
+											</p>
+											<p class="clients__adres">
+												London, England
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clients__slide swiper-slide">
+									<div class="clients__info">
+										<div class="clients__img"></div>
+										<div class="clients__text textS">
+											<p class="clients__article">
+												Lorem ipsum dolor sit amet
+												consectetur adipisicing elit.
+												Tempore porro autem ipsam fugit
+												praesentium mollitia veritatis
+												numquam molestias accusantium
+												facere.
+											</p>
+											<p class="clients__name">
+												Ves Dimri
+											</p>
+											<p class="clients__adres">
+												London, England
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clients__slide swiper-slide">
+									<div class="clients__info">
+										<div class="clients__img"></div>
+										<div class="clients__text textS">
+											<p class="clients__article">
+												Lorem ipsum dolor sit amet
+												consectetur adipisicing elit.
+												Neque, eum optio perferendis
+												nulla voluptatum asperiores
+												quaerat perspiciatis veritatis
+												inventore necessitatibus
+												exercitationem labore
+												consequatur laborum incidunt
+												odio in
+											</p>
+											<p class="clients__name">
+												Rim Sagev
+											</p>
+											<p class="clients__adres">
+												London, England
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div
+								class="clients__pagination swiper-pagination"
+							></div>
+						</div>
+					</div>
+				</section>
+				<section class="discount">
+					<div class="container">
+						<div class="discount__body">
+							<p class="discount__text">
+								Get special discount on your first journey
+							</p>
+							<a class="discount__btn button" href="#"
+								>Book Now
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="contact">
+					<div class="container">
+						<ul class="contact__body">
+							<li class="contact__item">
+								<h6 class="contact__title">About Us</h6>
+								<a class="contact__info textS" href="#"
+									>About Us</a
+								><a class="contact__info textS" href="#">Blog</a
+								><a class="contact__info textS" href="#"
+									>Contact Us</a
+								>
+							</li>
+							<li class="contact__item">
+								<h6 class="contact__title">Address</h6>
+								<p class="contact__info textS">
+									4433 Heavner Court Plainview, New York
+								</p>
+							</li>
+							<li class="contact__item contact__item_big">
+								<h6 class="contact__title">Contact Us</h6>
+								<p class="contact__info textS">
+									Email: help@agency.com Cell: +516-260-0598
+								</p>
+							</li>
+							<li class="contact__item">
+								<h6 class="contact__title">Follow Us</h6>
+								<div class="contact__icons">
+									<a
+										class="contact__icon _icon-twitter"
+										href="#"
+									></a
+									><a
+										class="contact__icon _icon-facebook"
+										href="#"
+									></a
+									><a
+										class="contact__icon _icon-instagram"
+										href="#"
+									></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<div class="spec-line"></div>
+				<footer class="footer">
+					<div class="container">
+						<p class="footer__text">
+							Copyright@Parag 2016, All Rights Reserved
+						</p>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<div class="popup"></div>
+		<script type="module" src="./js/index-sliderSwiper-script.js"></script>
+		<script src="./js/index-script.js"></script>
+	</body>
+</html>
