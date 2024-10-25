@@ -1,0 +1,32 @@
+<svg width="0" height="0" class="hidden">
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 971 971" id="decor1">
+    <rect x="785.414" y="56.9998" width="2.76932" height="1110.74" transform="rotate(45 785.414 56.9998)" ></rect>
+    <circle cx="574.36" cy="269.74" r="15.5" ></circle>
+    <rect width="2.76065" height="1370" transform="matrix(0.706878 0.707335 -0.706878 0.707335 968.421 -0.000488281)" ></rect>
+    <ellipse cx="472.226" cy="498.096" rx="15.4465" ry="15.4565" ></ellipse>
+  </symbol>
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 897 897" id="decor2">
+    <rect x="894.237" width="2.76932" height="1264.64" transform="rotate(45 894.237 0)" ></rect>
+    <circle cx="783.547" cy="112.376" r="15.5" ></circle>
+    <rect width="2.76065" height="1008.49" transform="matrix(0.706878 0.707335 -0.706878 0.707335 894.689 125.737)" ></rect>
+    <ellipse cx="681.413" cy="340.733" rx="15.4465" ry="15.4565" ></ellipse>
+  </symbol>
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1064 1000" id="decor3">
+    <rect x="905.688" y="32.0395" width="2.76932" height="1280.84" transform="rotate(45 905.688 32.0395)" ></rect>
+    <circle cx="361.302" cy="578.54" r="15.5" ></circle>
+    <rect width="2.76065" height="1411" transform="matrix(0.706878 0.707335 -0.706878 0.707335 1061.09 0)" ></rect>
+    <ellipse cx="564.216" cy="498.772" rx="15.4465" ry="15.4565" ></ellipse>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="fullscreen">
+    <path d="M200 32H56C42.7 32 32 42.7 32 56V200c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l40-40 79 79-79 79L73 295c-6.9-6.9-17.2-8.9-26.2-5.2S32 302.3 32 312V456c0 13.3 10.7 24 24 24H200c9.7 0 18.5-5.8 22.2-14.8s1.7-19.3-5.2-26.2l-40-40 79-79 79 79-40 40c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H456c13.3 0 24-10.7 24-24V312c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2l-40 40-79-79 79-79 40 40c6.9 6.9 17.2 8.9 26.2 5.2s14.8-12.5 14.8-22.2V56c0-13.3-10.7-24-24-24H312c-9.7 0-18.5 5.8-22.2 14.8s-1.7 19.3 5.2 26.2l40 40-79 79-79-79 40-40c6.9-6.9 8.9-17.2 5.2-26.2S209.7 32 200 32z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="pause">
+    <path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" id="stop">
+    <path d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" id="play">
+    <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+  </symbol>
+</svg>
