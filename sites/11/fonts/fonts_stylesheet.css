@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Harabara Mais';
+    src: url('HarabaraMaisBold-HarabaraMaisBold.eot');
+    src: url('HarabaraMaisBold-HarabaraMaisBold.eot?#iefix') format('embedded-opentype'),
+        url('HarabaraMaisBold-HarabaraMaisBold.woff2') format('woff2'),
+        url('HarabaraMaisBold-HarabaraMaisBold.woff') format('woff'),
+        url('HarabaraMaisBold-HarabaraMaisBold.ttf') format('truetype'),
+        url('HarabaraMaisBold-HarabaraMaisBold.svg#HarabaraMaisBold-HarabaraMaisBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('TimesNewRomanPSMT.eot');
+    src: url('TimesNewRomanPSMT.eot?#iefix') format('embedded-opentype'),
+        url('TimesNewRomanPSMT.woff2') format('woff2'),
+        url('TimesNewRomanPSMT.woff') format('woff'),
+        url('TimesNewRomanPSMT.ttf') format('truetype'),
+        url('TimesNewRomanPSMT.svg#TimesNewRomanPSMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Heavy.eot');
+    src: url('Lato-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Lato-Heavy.woff2') format('woff2'),
+        url('Lato-Heavy.woff') format('woff'),
+        url('Lato-Heavy.ttf') format('truetype'),
+        url('Lato-Heavy.svg#Lato-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
