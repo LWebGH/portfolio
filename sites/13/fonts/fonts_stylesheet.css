@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-ExtraBold.eot');
+    src: local('Gilroy-ExtraBold'),
+        url('Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-ExtraBold.woff2') format('woff2'),
+        url('Gilroy-ExtraBold.woff') format('woff'),
+        url('Gilroy-ExtraBold.ttf') format('truetype'),
+        url('Gilroy-ExtraBold.svg#Gilroy-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Bold.eot');
+    src: local('Gilroy-Bold'),
+        url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Bold.woff2') format('woff2'),
+        url('Gilroy-Bold.woff') format('woff'),
+        url('Gilroy-Bold.ttf') format('truetype'),
+        url('Gilroy-Bold.svg#Gilroy-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.eot');
+    src: local('Gilroy-Medium'),
+        url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Medium.woff2') format('woff2'),
+        url('Gilroy-Medium.woff') format('woff'),
+        url('Gilroy-Medium.ttf') format('truetype'),
+        url('Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('ChronicleDisplay-Semi.eot');
+    src: local('Chronicle Display Semibold'), local('ChronicleDisplay-Semi'),
+        url('ChronicleDisplay-Semi.eot?#iefix') format('embedded-opentype'),
+        url('ChronicleDisplay-Semi.woff2') format('woff2'),
+        url('ChronicleDisplay-Semi.woff') format('woff'),
+        url('ChronicleDisplay-Semi.ttf') format('truetype'),
+        url('ChronicleDisplay-Semi.svg#ChronicleDisplay-Semi') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
