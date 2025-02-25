@@ -1,0 +1,16 @@
+[
+	{ "name": "cactus", "url": "https://ru.wikipedia.org/wiki/Cactus" },
+	{ "name": "orchideae", "url": "https://uk.wikipedia.org/wiki/Orchideae" },
+	{ "name": "ficus", "url": "https://en.wikipedia.org/wiki/Ficus" },
+	{ "name": "violet", "url": "https://en.wikipedia.org/wiki/Viola_(plant)" },
+	{ "name": "bonsai", "url": "https://en.wikipedia.org/wiki/Bonsai" },
+	{ "name": "Aglaonema", "url": "https://en.wikipedia.org/wiki/Aglaonema" },
+	{ "name": "Anthurium", "url": "https://en.wikipedia.org/wiki/Anthurium" },
+	{
+		"name": "Dieffenbachia",
+		"url": "https://en.wikipedia.org/wiki/Dieffenbachia"
+	},
+	{ "name": "Aloe", "url": "https://en.wikipedia.org/wiki/Aloe" },
+	{ "name": "Yucca", "url": "https://en.wikipedia.org/wiki/Yucca" },
+	{ "name": "Crocus", "url": "https://en.wikipedia.org/wiki/Crocus" }
+]
