@@ -30,9 +30,12 @@ Each project is located in a separate folder and may include:
 - Responsive designs for mobile and desktop  
 - A multi-page website built with modular styles  
 - Custom sliders and UI elements using Swiper.js  
+<!-- 
 -----------------------------------------------------------------------  
 
 ## 📬 Let's Connect
 
 I'm always open to collaboration.  
 Reach out to me on [LinkedIn](linkedin.com/in/lev-473358329)
+-->
+
